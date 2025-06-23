@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>miawww - mentari</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <header>
+                <div class="profile-pic">
+                    <img src="pr.jpg" alt="Foto Profil saya">
+                </div>
+                <h1>Mentari</h1>
+                <p class="bio"><span class="typing"></span></p>
+            </header>
+            <section class="links">
+                <a href="https://www.instagram.com/miazquerzyy_?igsh=dDR4czB6NWViaGEw" class="link-button instagram">
+                    <i class="fab fa-instagram"></i>
+                    <span>Instagram</span>
+                </a>
+
+                <a href="https://youtube.com/@molina13ku?si=ahEzmrtxRJaT7InI" class="link-button youtube">
+                    <i class="fab fa-youtube"></i>
+                    <span>YouTube</span>
+                </a>
+
+                <a href="https://www.facebook.com/tharry.zaa">
+                    <i class="fab fa-facebook"></i>
+                    <span>Facebook</span>
+                </a>
+
+                <a href="https://wa.me/qr/ZR3VP3RLVUZOK1" class="link-button whatsapp">
+                    <i class="fab fa-whatsapp"></i>
+                    <span>whatsapp</span>
+
+                </a>
+             
+                <a href="https://maps.app.goo.gl/iLe7tQzVbFfPtAk5A?g_st=aw" class="link-button Google">
+                    <i class="fab fa-chrome"></i>
+                    <span>Google</span>
+                </a>
+            </section>
+        </div>
+    </div>
+    <footer>
+        <p>© 2025 MyLinkTree</p>
+    </footer>
+
+    <script>
+        const text = "i love food";
+        const typing = document.querySelector(".typing");
+        let index = 0;
+
+        function type() {
+            if (index < text.length) {
+                typing.textContent += text.charAt(index);
+                index++;
+                setTimeout(type, 100);
+            }
+        }
+
+        window.onload = type;
+    </script>
+</body>
+</html>
